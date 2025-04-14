@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Loginpage from "./auth/Loginpage";
 import FullScreenLoader from "./components/FullscreenLoader";
 import Signuppage from "./auth/Signuppage";
 

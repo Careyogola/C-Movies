@@ -67,9 +67,6 @@ function Signuppage(){
                     onChange={handleChange}
                     className='border-none, rounded-sm outline-none p-2 bg-white text-black'
                     />
-                    <div className='flex justify-end items-center'>
-                    <Link to='/forgotpassword' className='text-gray-500 font-medium justify-end'>Forgot password?</Link>
-                    </div>
                     <button 
                     onClick={handleSubmit}
                     className='bg-blue-600 text-white font-bold py-2 rounded-sm mt-3 hover:cursor-pointer'>
