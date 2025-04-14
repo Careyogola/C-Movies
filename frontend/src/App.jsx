@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Loginpage from "./auth/Loginpage";
 import FullScreenLoader from "./components/FullscreenLoader";
+import Signuppage from "./auth/Signuppage";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -14,7 +15,7 @@ function App() {
 
   return loading ? <FullScreenLoader /> : (
     <div className="min-h-screen">
-      <Loginpage />
+      <Signuppage />
     </div>
   );
 }
