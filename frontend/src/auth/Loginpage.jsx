@@ -6,6 +6,8 @@ const Loginpage = () => {
 
     const [isLoading, setIsLoading] = useState(false);
 
+    
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -37,7 +39,7 @@ const Loginpage = () => {
                 <form 
                 onSubmit={handleChange}
                 className='flex flex-col gap-3 w-[]'>
-                    <label for ='name'>Name</label>
+                    <label htmlFor ='name'>Name</label>
                     <input 
                     type='text' 
                     id='name' 
@@ -47,7 +49,7 @@ const Loginpage = () => {
                     className='border-none, rounded-sm outline-none p-2 bg-white text-black'
                     />
 
-                    <label for ='email'>Email</label>
+                    <label htmlFor ='email'>Email</label>
                     <input 
                     type='email' 
                     id='email' 
@@ -57,7 +59,7 @@ const Loginpage = () => {
                     className='border-none, rounded-sm outline-none p-2 bg-white text-black'
                     />
 
-                    <label for ='password'>Password</label>
+                    <label htmlFor ='password'>Password</label>
                     <input 
                     type='password' 
                     id='password' 
