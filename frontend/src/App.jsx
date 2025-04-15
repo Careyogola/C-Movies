@@ -1,21 +1,23 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
+import { Fragment } from "react";
 import FullScreenLoader from "./components/FullscreenLoader";
-import Signuppage from "./auth/Signuppage";
+import Homepage from "./pages/Homepage";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
   
 
-  useEffect(() => {
-    setLoading(true);
-    const timeout = setTimeout(() => setLoading(false), 500); 
-    return () => clearTimeout(timeout);
-  }, []);
+  // useEffect(() => {
+  //   setLoading(true);
+  //   const timeout = setTimeout(() => setLoading(false), 500); 
+  //   return () => clearTimeout(timeout);
+  // }, []);
 
-  return loading ? <FullScreenLoader /> : (
-    <div className="min-h-screen">
-      <Signuppage />
-    </div>
+  return (
+    <Fragment>
+      <Homepage />
+    </Fragment>
+      
   );
 }
 
