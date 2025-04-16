@@ -1,5 +1,8 @@
 import React from 'react'
 import Button from '../components/Button.jsx'
+import { Link } from 'react-router'
+import { GoChevronDown } from "react-icons/go";
+
 
 const Navbar = () => {
 
@@ -14,14 +17,20 @@ const Navbar = () => {
         alt='Netflix Logo'
         className='h-10 w-28 ml-4 '
         />
-        <div className='flex flex-row justify-between gap-4 mr-4'>
+        <div className='flex flex-row items-center gap-3'>
+          <Link to='/'>
+          <p className='flex flex-row items-center gap-1'>
+            products <GoChevronDown />
+          </p>
+          </Link>
+
+        </div>
+        <div className=' mr-4'>
             <Button 
             text='Get started'
             onClick={handleClick}
             />
 
-            <Button text='Login'
-            onClick={handleClick}/>
         </div>
 
     </div>
